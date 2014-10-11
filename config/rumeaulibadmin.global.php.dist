@@ -1,0 +1,24 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Jean
+ * Date: 09/10/2014
+ * Time: 16:46
+ */
+return [
+    'rumeaulib_admin' => [
+        'override_layout' => true,
+        'admin_layout'    => 'layout/admin',
+    ],
+
+    'bjyauthorize' => [
+        'guards' => [
+            'BjyAuthorize\Guard\Controller' => [
+                //['controller' => 'admin', 'roles' => ['admin']],
+            ],
+            'BjyAuthorize\Guard\Route' => [
+                //['route' => 'admin', 'roles' => ['admin']],
+            ],
+        ],
+    ],
+];

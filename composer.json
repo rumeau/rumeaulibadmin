@@ -1,0 +1,34 @@
+{
+    "name": "rumeaus/rumeaulib-admin",
+    "description": "An Admin module for ZF2.",
+    "license": "MIT License",
+    "type": "library",
+    "keywords": [
+        "zf2", "admin"
+    ],
+    "homepage": "https://github.com/rumeau/RumeauLibAdmin",
+    "authors": [
+        {
+            "name": "Jean Rumeau",
+            "email": "rumeau@gmail.com",
+            "homepage": "http://www.jprumeau.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "zendframework/zendframework": "2.*",
+        "rumeau/rumeaulib-appconfig": "dev-master"
+    },
+    "suggest": {
+        "zf-commons/zfc-user": "User control for ZF2",
+        "bjyoungblood/bjy-authorize": "Access control for ZF2"
+    },
+    "autoload": {
+        "psr-0": {
+            "RumeauLibAdmin": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
