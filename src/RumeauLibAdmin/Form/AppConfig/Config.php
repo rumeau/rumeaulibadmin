@@ -24,15 +24,17 @@ class Config extends Fieldset implements ServiceLocatorAwareInterface
     {
         $layouts = $this->loadLayouts();
 
+        $this->setLabel('Admin Config');
+
         $this->add([
             'type' => 'Zend\Form\Element\Select',
             'name' => 'admin_layout',
             'options' => [
                 'label' => 'Admin Layout',
-                'label_attributes' => ['class' => 'col-sm-2'],
+                'label_attributes' => ['class' => 'col-sm-3'],
                 'value_options' => $layouts,
                 'twb-layout' => 'horizontal',
-                'column-size' => 'sm-10',
+                'column-size' => 'sm-9',
             ],
             'attributes' => [
 

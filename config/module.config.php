@@ -22,7 +22,7 @@ return [
 
     'service_manager' => [
         'factories' => [
-            'admin_navigation' => 'RumeauLibAdmin\Navigation\Service\AdminNavigationFactory',
+            'nav_admin' => 'RumeauLibAdmin\Navigation\Service\AdminNavigationFactory',
         ],
     ],
 
